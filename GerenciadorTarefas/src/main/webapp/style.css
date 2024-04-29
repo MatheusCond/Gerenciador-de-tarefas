@@ -1,0 +1,121 @@
+body{
+    background-color: #1b1f27;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+@keyframes subirDescer{
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 3px;
+    }
+}
+
+.tituloTopo{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: -100px;
+    color: #cbd0f7;
+}
+
+.tituloTopoCadastro{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -120px;
+    color: #999999;
+}
+
+.tituloTopoCadastro h2{
+    font-family: 'Font Titulo', sans-serif;
+    position: relative;
+    animation: subirDescer 1s infinite;
+    font-size: 16px;
+}
+
+.area-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181920;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.login form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login input{
+    margin-top: 10px;
+    background-color: #252a34;
+    padding-left: 10px;
+    color: #cbd0f7;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+
+#erro-nome{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    color: red;
+}
+#erro-email{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    color: red;
+}
+#erro-senha{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    color: red;
+}
+
+
+.login img{
+    width: 65px;
+    height: auto;
+}
+
+input::placeholder{
+    color: #999999;
+    font-size: 14px;
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #5568fe;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p{
+    color: #cbd0f7;
+}
+
+a{
+    color: #5568fe;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
